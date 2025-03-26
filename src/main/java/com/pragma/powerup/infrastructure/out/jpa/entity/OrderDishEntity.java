@@ -1,4 +1,4 @@
-package com.pragma.powerup.domain.model;
+package com.pragma.powerup.infrastructure.out.jpa.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ObjectModel {
+public class OrderDishEntity {
     private Long id;
-    private String name;
+    private Long idDish;
+    private Integer quantity;
 }

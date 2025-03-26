@@ -1,15 +1,13 @@
 server:
-  port: 8081
+  port: 8084
 
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/powerup
-    username: root
-    password: 123456
-
-  jpa:
-    hibernate:
-      ddl-auto: create
-    show-sql: true
+  data:
+    mongodb:
+      uri: mongodb+srv://manuelcarrascal:aydTJGm0XP5p40CJ@plazoleta.ly5cgey.mongodb.net/traceability
+      auto-index-creation: true
+  cloud:
+    config:
+      enabled: false
 appDescription: "Pragma Powerup"
 appVersion: "1.0.0"
